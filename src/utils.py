@@ -39,7 +39,7 @@ def evaluate_models(x_train,y_train,x_test, y_test,models):
 
             report[model_name] = r2_score_test
 
-            return report
+        return report
 
     except Exception as e:
         raise ExceptionHandling(e,sys)
